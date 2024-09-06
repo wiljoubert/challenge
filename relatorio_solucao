@@ -1,0 +1,5 @@
+A solução proposta aborda os desafios associados a grandes volumes de dados. Conforme dica informada, em vez de carregar o arquivo CSV inteiro na memória de uma vez,
+a solução usa a funcionalidade de leitura em chunks da biblioteca Pandas. Assim, o arquivo é lido em partes.
+Cada chunk é armazenado temporariamente em uma lista, permitindo a concatenação posterior. Após a leitura dos chunks, os DataFrames são concatenados em um único DataFrame.
+Outro ponto importante é que a solução usa técnicas de agrupamento e agregação para realizar análise sobre os dados processados.
+A leitura em chunks, concatenção de DataFrames, e técnicas de agrupamento e agregação permitem que o sistema lide com grandes arquivos CSV de maneira eficiente e escalável. 
